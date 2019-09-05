@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>webApi</name>
+    </assembly>
+    <members>
+        <member name="M:_2C2P___Aznar.Controllers.CustomerController.Get(_2C2P___Aznar.Models.InquiryCriteriaDto)">
+            <summary>
+            InquiryCriteria passes in post inside body
+            </summary>
+            <param name="inquiryCriteria"></param>
+            <returns></returns>
+        </member>
+        <member name="T:_2C2P___Aznar.Converters.DateFormatConverter">
+            <summary>
+            converter to generate needed json datetime format
+            </summary>
+        </member>
+        <member name="T:_2C2P___Aznar.Models.Customer">
+            <summary>
+            Comments: It would be recommended to add a boolean 'status' , or a datetime DateDeleted to 
+            be able to use soft deletes
+            </summary>
+        </member>
+        <member name="T:_2C2P___Aznar.Models.CustomerDto">
+            <summary>
+            I use Dtos in order to separate what is data modeling from data tranfer objects
+            through api requests
+            In this scenario the DTOs objects are almost equals to Model Objects, but in my opinion is a good separation of concerns.
+            The mapping can be set manually, or otherwise through a mapping tool as I'm using in this project (autommapper)
+            </summary>
+        </member>
+        <member name="T:_2C2P___Aznar.Models.InquiryCriteria">
+            <summary>
+            entity object representing reques criterias
+            </summary>
+        </member>
+        <member name="T:_2C2P___Aznar.Models.Transaction">
+            <summary>
+            entity object that represents a transaction
+            </summary>
+        </member>
+        <member name="T:_2C2P___Aznar.Models.Transaction.TransactionStatus">
+            <summary>
+            I prefer to use enumeration for status as it is friendlier to manipulate
+            </summary>
+        </member>
+        <member name="T:_2C2P___Aznar.Models.Transaction.TransactionCurrency">
+            <summary>
+            Idem as Status, here an enumeration that would have all diferente currencies codes
+            </summary>
+        </member>
+    </members>
+</doc>
